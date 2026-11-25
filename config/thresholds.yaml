@@ -1,0 +1,137 @@
+# Credit Early-Warning Monitor - threshold configuration
+# ------------------------------------------------------------------
+# All bands and weights live here, never in code. Edit this file to
+# re-point the model at a different lending policy.
+#
+# Band semantics
+#   direction: lower_is_better  ->  value <= green  : green
+#                                   value <= amber  : amber
+#                                   value >  amber  : red
+#   direction: higher_is_better ->  value >= green  : green
+#                                   value >= amber  : amber
+#                                   value <  amber  : red
+#   Boundaries are inclusive: a value sitting exactly on "green" is green,
+#   a value sitting exactly on "amber" is amber.
+#
+# deterioration
+#   The minimum year-on-year move, in the ratio's own unit and in the
+#   adverse direction, that counts as deterioration. It fires even when
+#   the level is still inside a green or amber band.
+#
+# unit is used for formatting only: x = times, pct = fraction (0.15 = 15%),
+# days = days.
+
+version: 1
+
+score:
+  red_weight: 3.0
+  amber_weight: 1.0
+  deterioration_weight: 0.5
+  deterioration_counts_when_red: false
+  red_min_score: 12.0
+  amber_min_score: 4.0
+
+ratios:
+  net_debt_ebitda:
+    label: Net debt / EBITDA
+    direction: lower_is_better
+    unit: x
+    green: 3.0
+    amber: 4.5
+    deterioration: 0.5
+
+  interest_coverage:
+    label: Interest coverage (EBITDA / interest)
+    direction: higher_is_better
+    unit: x
+    green: 2.5
+    amber: 1.5
+    deterioration: 0.5
+
+  dscr_proxy:
+    label: Cash interest cover (CFO / interest)
+    direction: higher_is_better
+    unit: x
+    green: 1.5
+    amber: 1.0
+    deterioration: 0.25
+
+  dscr:
+    label: DSCR (CFO / (interest + scheduled principal))
+    direction: higher_is_better
+    unit: x
+    green: 1.25
+    amber: 1.0
+    deterioration: 0.20
+
+  current_ratio:
+    label: Current ratio
+    direction: higher_is_better
+    unit: x
+    green: 1.33
+    amber: 1.0
+    deterioration: 0.15
+
+  quick_ratio:
+    label: Quick ratio
+    direction: higher_is_better
+    unit: x
+    green: 1.0
+    amber: 0.7
+    deterioration: 0.10
+
+  tol_tnw:
+    label: TOL / TNW ((debt + contingent) / net worth)
+    direction: lower_is_better
+    unit: x
+    green: 2.0
+    amber: 3.0
+    deterioration: 0.25
+
+  cfo_to_debt:
+    label: CFO / total debt
+    direction: higher_is_better
+    unit: x
+    green: 0.20
+    amber: 0.10
+    deterioration: 0.05
+
+  ebitda_margin:
+    label: EBITDA margin
+    direction: higher_is_better
+    unit: pct
+    green: 0.15
+    amber: 0.10
+    deterioration: 0.02
+
+  revenue_growth:
+    label: Revenue growth (YoY)
+    direction: higher_is_better
+    unit: pct
+    green: 0.08
+    amber: 0.0
+    deterioration: 0.03
+
+  receivable_days:
+    label: Receivable days
+    direction: lower_is_better
+    unit: days
+    green: 60
+    amber: 90
+    deterioration: 10
+
+  inventory_days:
+    label: Inventory days (COGS basis when supplied)
+    direction: lower_is_better
+    unit: days
+    green: 60
+    amber: 90
+    deterioration: 10
+
+  pat_to_networth:
+    label: PAT / net worth
+    direction: higher_is_better
+    unit: pct
+    green: 0.10
+    amber: 0.05
+    deterioration: 0.03
