@@ -1,0 +1,25 @@
+borrower,sector,fiscal_year,revenue,ebitda,pat,interest_expense,total_debt,net_worth,current_assets,current_liabilities,inventory,receivables,cash,cfo,capex,contingent_liabilities
+Deccan Auto Components Pvt Ltd,Auto components,2022,820,98.4,22,48,620,310,340,250,130,175,18,62,55,60
+Deccan Auto Components Pvt Ltd,Auto components,2023,790,86.9,15,55,660,305,330,260,132,180,15,40,45,70
+Deccan Auto Components Pvt Ltd,Auto components,2024,745,67.05,-8,62,700,288,300,255,128,178,12,8,30,85
+Deccan Auto Components Pvt Ltd,Auto components,2025,690,44.85,-34,68,745,262,275,265,124,170,10,-12,20,95
+Sundaram Textiles Ltd,Textiles,2022,540,48.6,12,34,400,190,210,190,95,105,22,30,25,40
+Sundaram Textiles Ltd,Textiles,2023,525,42.0,4,36,415,182,200,196,94,108,18,18,20,48
+Sundaram Textiles Ltd,Textiles,2024,505,25.75,-14,38,432,168,182,198,90,104,14,2,12,55
+Sundaram Textiles Ltd,Textiles,2025,470,-18.0,-36,41,455,138,165,205,88,98,9,-25,6,62
+Kalyan Agro Foods Ltd,Food processing,2022,980,127.4,62,32,300,420,400,260,165,150,40,95,60,30
+Kalyan Agro Foods Ltd,Food processing,2023,1060,127.2,66,36,330,455,420,275,172,160,38,88,65,35
+Kalyan Agro Foods Ltd,Food processing,2024,1140,119.7,58,41,370,490,440,290,178,168,35,70,55,40
+Kalyan Agro Foods Ltd,Food processing,2025,1195,121.9,44,47,405,520,455,310,185,178,30,48,40,45
+Nirvana Pharma Labs Ltd,Pharmaceuticals,2022,610,109.8,58,8,180,300,250,120,70,130,60,85,70,45
+Nirvana Pharma Labs Ltd,Pharmaceuticals,2023,655,111.35,60,10,205,330,265,130,78,145,52,72,80,60
+Nirvana Pharma Labs Ltd,Pharmaceuticals,2024,690,106.95,52,13,240,358,280,145,88,160,45,55,85,78
+Nirvana Pharma Labs Ltd,Pharmaceuticals,2025,705,97.29,34,18,275,372,292,162,98,172,38,30,60,92
+Tapti Chemicals Ltd,Specialty chemicals,2022,720,115.2,92,14,150,380,330,150,110,105,55,100,45,25
+Tapti Chemicals Ltd,Specialty chemicals,2023,780,128.7,108,15,165,425,360,162,118,112,62,118,50,26
+Tapti Chemicals Ltd,Specialty chemicals,2024,845,143.65,124,16,175,475,390,175,125,118,70,135,55,28
+Tapti Chemicals Ltd,Specialty chemicals,2025,920,158.24,142,17,185,530,425,188,132,125,80,152,60,30
+Vaigai Engineering Works Ltd,Capital goods,2022,430,60.2,38,11,130,165,175,95,58,62,30,42,22,18
+Vaigai Engineering Works Ltd,Capital goods,2023,470,68.15,45,11,140,190,190,100,62,68,34,50,26,19
+Vaigai Engineering Works Ltd,Capital goods,2024,505,75.75,52,12,148,215,205,106,66,72,38,58,28,20
+Vaigai Engineering Works Ltd,Capital goods,2025,545,83.93,61,12,155,245,222,112,70,76,44,66,30,22
