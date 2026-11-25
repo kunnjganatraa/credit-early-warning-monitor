@@ -1,0 +1,13 @@
+# Credit Early-Warning Monitor - runtime and test dependencies
+# Python 3.12. Nothing here reaches the network at runtime.
+
+pandas>=2.0
+openpyxl>=3.1
+matplotlib>=3.7
+
+# test only
+pytest>=7.4
+
+# Optional: if installed, YAML configs are parsed with PyYAML.
+# Without it, ews/config.py falls back to its built-in YAML reader.
+# PyYAML>=6.0
